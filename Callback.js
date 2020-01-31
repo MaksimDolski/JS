@@ -29,5 +29,3 @@ function finished() {
 }
 
 doHomework("English", finished);
-
-//uhiuhiopu 
