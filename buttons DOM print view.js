@@ -7,3 +7,8 @@ function printMode1() {
 function printMode2() {
   document.querySelector("link").href = "style.css";
 }
+
+// or:
+// document.querySelector(".btn").onclick = function () {
+// console.log("show text"); console.log("show text");
+// }
