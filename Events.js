@@ -1,11 +1,11 @@
 // Events
 
 document.querySelector(".new").onclick = function () {
-  console.log("you have click");
+  console.log("click");
 }
 
 document.querySelector(".double").ondblclick = function () {
-  console.log("you have double click");
+  console.log("double click");
 }
 
 document.querySelector(".mouse").onmousemove = function () {
