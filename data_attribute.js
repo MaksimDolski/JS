@@ -25,3 +25,20 @@ function show() {
   }
   document.querySelector(` .tab_body[data="${data}"]`).style.display = "block";
 }
+
+// css style
+.tabs {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  background-color: pink;
+}
+
+.tab {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px 5px;
+  background-color: pink;
+  font-weight: bold;
+}
