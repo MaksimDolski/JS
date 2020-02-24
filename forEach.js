@@ -25,16 +25,3 @@ blocks.forEach(function(element) {
 <div class="block">6</div>
 <div class="block">7</div>
 <div class="block">8</div>
-
-
-.block {
-display: flex;
-align-items: center;
-justify-content: center;
-float: left;
-width: 50px;
-height: 50px;
-border: 1px solid white;
-background-color: pink;
-border-radius: 10px;
-}
