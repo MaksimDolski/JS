@@ -1,0 +1,6 @@
+btn	/Users/Maksim/github/JS/toUpperCase().js	/^var btn = document.querySelector('#btn');$/;"	variable	line:1
+line	/Users/Maksim/github/JS/toUpperCase().js	/^var line = document.querySelector('#line');$/;"	variable	line:2
+lineValue	/Users/Maksim/github/JS/toUpperCase().js	/^var lineValue = line.value;$/;"	variable	line:3
+arr	/Users/Maksim/github/JS/toUpperCase().js	/^var arr = lineValue.split();$/;"	variable	line:4
+run	/Users/Maksim/github/JS/toUpperCase().js	/^function run () {$/;"	function	line:6
+run	/Users/Maksim/github/JS/toUpperCase().js	/^function run () {$/;"	function	line:6
