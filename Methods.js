@@ -49,5 +49,31 @@ var c = "";
 var result = c.concat(a, " ", b);
 console.log(result);
 
+// Number and Boolean
+let num = Number("777"); // 777
+let num = Number("number"); // Nan
+
+// Number.isInteger();
+Number.isInteger(0); // false
+Number.isInteger(12); // true
+Number.isInteger(0.1); // false
+
+// String example
+var str = "Sting"; // String
+var srs = String("String"); // string
+var str = new Sctring("String"); // object
+
+// Number example
+let num = 25; // Number
+let num = Number(25); // Number 
+let num = new Number(25); // object
+
+// Boolean example
+let bool = true; // Boolean
+let bool = Boolean(true); // Boolean
+let bool = new Boolean(true) // object
+
+// Date
+let a = new Date; // from 1 Januart of 1970 
 
 // END
