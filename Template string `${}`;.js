@@ -7,6 +7,6 @@ var name = "Life is good, life is great";
 
 function songName(words) {
   var song = "Song:";
-  return `${song} ${words}`;
+  return `${song} ${name}`;
 }
 `Now you are listening ${songName(name)}`;
