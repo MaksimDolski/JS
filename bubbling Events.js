@@ -35,3 +35,36 @@ three.addEventListener("click", msg);
 // Target: three
 // Current target: one
 // ---------------------
+
+// CSS
+// #one {
+// border: 2px solid red;
+// width: 450px;
+// height: 200px;
+// 
+// }
+// 
+// #two {
+//   border: 2px solid green;
+//   width: 350px;
+//   height: 150px;
+//   margin-left: 50px;
+//   margin-top: 5px;
+// }
+// 
+// #three {
+//   border: 2px solid blue;
+//   width: 250px;
+//   height: 100px;
+//   margin-left: 50px;
+//   margin-top: 5px;
+// 
+// }
+// 
+// #one {
+// /* display: flex; */
+// align-items: center;
+// justify-content: center;
+// text-align: center;
+// 
+// }
