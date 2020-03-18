@@ -1,4 +1,4 @@
-ф a // Events
+// Events
 
 document.querySelector(".new").onclick = function () {
   console.log("click");
