@@ -52,7 +52,54 @@ TapeRecorder.prototype.constructor === Machine // true
 TapeRecorder.prototype.constructor === TapeRecorder // true
 
 
+// Объектно-ориентированное программирование - ООП - методология, которая позволяет преставить приложение в виде совокупности ОБЪЕКТОВ, взаимодейтсвующих друг с другом.
+// 
+// Такие объекты создаются с помощью конструкций - классы (classes);
 
+
+// портатипное наследование
+let functionality = {
+  open: function () {
+    console.log(`${this.room} is open.`);
+  }
+};
+
+let bathRoom = {
+  room: "Bath room"
+};
+
+let kitchen = {
+  room: "Kitchen"
+};
+
+bathRoom.__proto__ = functionality;
+kitchen.__proto__ = functionality;
+
+bathRoom.open();
+kitchen.open();
+
+
+// example - using .this inheritance
+function Printer(doc) {
+  this.document = doc;
+  this.print = function () {
+    console.log(this.document);
+  }
+}
+
+var newPrinter = new Printer("Test text");
+newPrinter.print(); // Test text
+
+// example - using prototype inheritance
+function Printer(doc) {
+  this.document = doc;
+  Printer.prototype.print = function () {
+    console.log(this.document);
+  }
+}
+
+var newPrinter = new Printer("Test text2");
+newPrinter.print();
 
 
 
