@@ -101,6 +101,63 @@ function Printer(doc) {
 var newPrinter = new Printer("Test text2");
 newPrinter.print();
 
+//inheritance - наследование 
 
+function Machine(product) {
+  this.product = product;
+}
+
+Machine.prototype = {
+  on: function () {
+    console.log(`${this.product} is ON`);
+  },
+  off: function () {
+    console.log(`${this.product} is OFF`);
+  }
+}
+
+
+function TapeRecorder(product) {
+  this.product = product;
+}
+TapeRecorder.prototype = Object.create(Machine.prototype); // наследование 
+const tapeRecorder = new TapeRecorder("Tape Recorder");
+tapeRecorder.on();
+
+// new ex
+function Machine(product) {
+  this.product = product;
+}
+
+Machine.prototype = {
+  on: function () {
+    console.log(`${this.product} is ON`);
+  },
+  off: function () {
+    console.log(`${this.product} is OFF`);
+  }
+}
+
+function TapeRecorder(product) {
+  this.product = product;
+}
+
+TapeRecorder.prototype = Object.create(Machine.prototype);
+// TapeRecorder.constructor = TapeRecorder;
+
+TapeRecorder.prototype = {
+  on: function () {
+    console.log(`${this.product} is ON, music is now playing!`);
+  },
+  pause: function () {
+    console.log(`${this.product} on PAUSE!`);
+  }
+}
+
+const tapeRecorder = new TapeRecorder("Tape Recorder");
+const machine = new Machine("Machine");
+
+machine.on();
+tapeRecorder.on();
 
 // END
