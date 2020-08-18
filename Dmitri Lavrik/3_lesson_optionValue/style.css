@@ -1,0 +1,16 @@
+.calculator {
+  background-color: #EFD739;
+  width: 500px;
+}
+
+.container {
+padding: 8px;
+}
+
+.btn_off {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+
+

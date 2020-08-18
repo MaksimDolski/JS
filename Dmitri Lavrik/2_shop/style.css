@@ -1,0 +1,15 @@
+.items {
+  display: flex;
+}
+
+.item {
+  background-color: #eee;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.item-active {
+  border: 1px solid black;
+}
