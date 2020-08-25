@@ -4,24 +4,25 @@ let btn_next = document.querySelector('.gallery .buttons .next');
 let images = document.querySelectorAll('.gallery .photos img');
 let i = 0;
 
-btn_next.onclick = function() {
+btn_next.onclick = function () {
   images[i].classList.remove('showed');
   i++;
-  
-  if(i >= images.length) {
+
+  if (i >= images.length) {
     i = 0;
   }
   images[i].classList.add("showed");
 }
 
-  btn_preview.onclick = function() {
+btn_preview.onclick = function () {
   images[i].classList.remove('showed');
   i--;
-  
-  if(i < 0) {
+
+  if (i < 0) {
     i = images.length - 1;
   }
   images[i].classList.add("showed");
 }
 
-
+// stInterval
+// setInterval(function() {slider2.next();},1000);

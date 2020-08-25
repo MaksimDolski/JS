@@ -15,13 +15,21 @@
   
 // onsubmit
 let inputs = document.querySelectorAll('form input[type=text]');
- 
-let form = document.querySelector('form').onsubmit = function(e) {
+let form = document.querySelector('form');
+
+form.onsubmit = function(e) {
+  let error = false;
   for(let i = 0; i < inputs.length; i++) {
     if(inputs[i].value == "") {
       inputs[i].classList.add('err');
-      e.preventDefault(); // блокирует кнопку
-      // return = false; // сработало бы, но тогда красная подсветка подсвечивала инпуты после каждого нажатия кнопки
+      error = true;
     }
+    else {
+      inputs[i].classList.remove('err');
+    }
+  }
+  if(error) { // if(error == true)
+    e.preventDefault(); // блокирует кнопку
+    // return = false; // сработало бы, но тогда красная подсветка подсвечивала инпуты после каждого нажатия кнопки
   }
 }
