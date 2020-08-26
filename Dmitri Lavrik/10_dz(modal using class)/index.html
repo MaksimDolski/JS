@@ -9,15 +9,27 @@
 
 <body>
   <!-- Button -->
-  <button class="btn">Open</button>
+  <button type="button" name="button" class="about">About</button>
+  <button type="button" name="button" class="form">Form</button>
 
   <!-- Modal window -->
   <div class="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <span class="close">x</span>
+        <span class="closeX">x</span>
         <h2>Header</h2>
       </div>
+
+      <div class="reg">
+        <form action="index.html" method="post"><br>
+          <label for="name">Name:</label><br>
+          <input id="name" type="text" name="" value=""><br><br>
+
+          <label for="last-name">Last Name:</label><br>
+          <input id="last-name" type="text" name="" value=""><br><br>
+        </form>
+      </div>
+
       <div class="modal-body">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -27,6 +39,8 @@
       </div>
     </div>
   </div>
+
+
 
   <script src="script.js">
 

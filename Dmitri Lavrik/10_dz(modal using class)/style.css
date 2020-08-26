@@ -2,6 +2,10 @@
   display: block;
 }
 
+.reg {
+  display: none;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -16,6 +20,7 @@
 }
 
 .modal-content {
+  display: none;
   position: relative;
   background-color: pink;
   margin: 0 auto;
@@ -35,14 +40,14 @@
   }
 }
 
-.close {
+.closeX {
   color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover {
+.closeX:hover {
   cursor: pointer;
   font-size: 35px;
 }

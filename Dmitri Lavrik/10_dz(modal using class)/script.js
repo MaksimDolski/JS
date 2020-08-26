@@ -1,54 +1,52 @@
-// let modal = document.querySelector('.modal');
-// let btn = document.querySelector(".btn");
-// let span = document.querySelector(".close");
-// 
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// }
-// 
-// span.onclick = function () {
-//   modal.style.display = "none";
-// }
-// 
-// window.onclick = function (event) {
-//   if (event.target == modal) { // event.target - показывает куда именно кликнули / где именно сработал обработчик
-//     modal.style.display = "none";
-//   }
-// }
-
-
-
 function Popup() {
+
   this.modal = document.querySelector('.modal');
+  this.modalContent = document.querySelector('.modal-content');
   this.modalBody = document.querySelector('.modal-body');
-  this.btn = document.querySelector('.btn');
-  this.span = document.querySelector('.close');
+  this.about = document.querySelector('.about');
 
   let popup = this;
 
   popup.open = function (content) {
-    popup.modalBody.innerHTML = content;
+    // popup.modal.innerHTML = content;
+
+    popup.modal.classList.remove('modal');
     popup.modal.classList.add('open');
+
+    popup.modalContent.classList.remove('.modal-content');
+    popup.modalContent.classList.add('open');
   }
 
   popup.close = function () {
     popup.modal.classList.remove('open');
+    popup.modalContent.classList.remove('open');
+
   }
 
-  popup.modal.onclick = popup.close;
+  popup.modalContent.onclick = popup.close;
 
 }
+
+
+
 
 let p = new Popup();
 
-setTimeout(function () {
-  p.open('Lorem ipsum dolor sit amet, consectetur adipisicing elit');
-}, 3000);
+// p.open();
 
-p.btn.onclick = function () {
-  p.open("форма отправки сообщения");
+// setTimeout(function () {
+//   p.close();
+// }, 3000);
+
+document.querySelector('.about').onclick = function () {
+  p.open();
 }
 
-p.span.onclick = function () {
-  p.close();
-}
+// document.querySelector('.closeX').onmouseover = function () {
+//   p.close();
+// }
+// 
+// document.querySelector('.btn2').onclick = function () {
+//   let form = document.querySelector('.reg');
+//   p.open(form.innerHTML);
+// }
