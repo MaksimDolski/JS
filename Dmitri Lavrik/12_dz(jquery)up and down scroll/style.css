@@ -1,0 +1,16 @@
+.btn {
+  background-color: #FEC3EB;
+  border: none;
+  border-radius: 10px;
+  height: 55px;
+  width: 70px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  text-align: right;
+}

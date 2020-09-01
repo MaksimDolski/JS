@@ -1,0 +1,10 @@
+.container {}
+
+.quetion {
+  font-size: 25px;
+}
+
+.answer {
+  display: none;
+  font-size: 20px;
+}
