@@ -46,17 +46,18 @@ for (let animal of animals) {
 }
 
 // можно заменить обычной функцией-конструктор:
-function User(name) {
-    this.name = name;
+class User {
+    constructor(name) {
+        this.name = name;
+    }
+    sayHi() {
+        console.log(this.name);
+    }
 }
 
-User.prototype.sayHi = function() {
-    console.log(this.name);
-}
 
-let user = new User('Maxim');
+let user = new User('Maxi');
 user.sayHi();
 
-// можно ещё дополнительно делать инкапсуляцию: export and import classes from other classes
 
-// add some changes and
+// можно ещё дополнительно делать инкапсуляцию: export and import classes from other classes
