@@ -59,4 +59,4 @@ user.sayHi();
 
 // можно ещё дополнительно делать инкапсуляцию: export and import classes from other classes
 
-// add some changes
+// add some changes and
